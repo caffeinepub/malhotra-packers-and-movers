@@ -1,0 +1,8 @@
+{
+  "frontend/src/App.tsx": "Enhanced main application component for Malhotra Packers and Movers featuring \"All India Services\" badge in hero section, updated services section highlighting nationwide coverage, integrated SpecialtyItems component, and improved footer copy mentioning India-wide service availability.",
+  "frontend/src/index.css": "Enhanced global styles with improved OKLCH color contrast ratios for accessibility, custom scrollbar styling, smooth scrolling behavior, and refined typography with font feature settings for the coffee and cardboard theme.",
+  "frontend/tailwind.config.js": "Extended Tailwind configuration with additional border radius utilities (xl, 2xl, 3xl), enhanced warm shadow variants, and custom keyframe animations (fade-in, slide-up, slide-in-right, scale-in) for smooth entrance effects throughout the site.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file for React Query hooks (no backend queries needed for this static content website).",
+  "frontend/src/hooks/useScrollAnimation.ts": "Custom React hook using Intersection Observer API to detect when elements enter the viewport and trigger scroll-based animations with configurable threshold and root margin.",
+  "frontend/src/components/SpecialtyItems.tsx": "New component displaying a grid of three specialty items (photo frames, trophies, and antiques) with pink-accented images, descriptions emphasizing expert handling, hover effects, and scroll animations consistent with the coffee/cardboard theme."
+}

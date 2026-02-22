@@ -1,0 +1,62 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add All India Services messaging and Specialty Items section with pink-accented images",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Add prominent 'All India Services' messaging to the homepage to communicate nationwide service availability",
+      "acceptanceCriteria": [
+        "All India Services messaging is prominently displayed on the homepage",
+        "The messaging clearly communicates nationwide service availability",
+        "The styling is consistent with the existing coffee and cardboard color scheme",
+        "The messaging integrates naturally with existing sections without disrupting layout"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add an 'All India Services' badge or banner in the hero section that communicates nationwide service availability. Integrate it naturally with the existing hero content using the coffee and cardboard color scheme. Position it prominently but non-disruptively, possibly as a badge overlay or subtitle near the main heading. Use scroll animations consistent with existing sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Create a new 'Specialty Items We Handle' section on the homepage showcasing capability to pack and move delicate items",
+      "acceptanceCriteria": [
+        "A new section titled 'Specialty Items We Handle' or similar is added to the homepage",
+        "The section displays generated images of photo frames, trophies, and antique items with pink accents",
+        "The section layout is responsive and follows the existing design patterns",
+        "The section communicates the company's expertise in handling delicate and valuable items"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SpecialtyItems.tsx",
+          "operation": "create",
+          "description": "Create a new SpecialtyItems component that displays a grid of specialty items the company handles. Include three items: photo frames, trophies, and antique items. Each item should display the corresponding generated image with pink accents (photo-frame-pink.dim_400x400.png, trophy-pink.dim_400x400.png, antique-item-pink.dim_400x400.png from frontend/public/assets/generated/), a title, and a brief description emphasizing the company's expertise in handling delicate and valuable items. Use a responsive grid layout (1 column mobile, 3 columns desktop) consistent with the existing services section. Apply scroll animations using the useScrollAnimation hook. Style with coffee and cardboard colors, and incorporate subtle pink accents to complement the images."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and integrate the SpecialtyItems component into the homepage. Position it after the services section and before the contact section to maintain logical content flow. Wrap it in a section element with appropriate spacing and background styling consistent with existing sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Render all newly generated specialty item images as static assets in the frontend for use in the Specialty Items section",
+      "acceptanceCriteria": [
+        "All generated specialty item images are placed in frontend/public/assets/generated directory",
+        "Images are properly referenced in the Specialty Items section component",
+        "Images load correctly and display with appropriate sizing and styling"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SpecialtyItems.tsx",
+          "operation": "modify",
+          "description": "Reference the three generated specialty item images using their exact workspace paths: frontend/public/assets/generated/photo-frame-pink.dim_400x400.png, frontend/public/assets/generated/trophy-pink.dim_400x400.png, and frontend/public/assets/generated/antique-item-pink.dim_400x400.png. Use relative public paths (/assets/generated/...) in img src attributes. Apply appropriate alt text for accessibility. Ensure images are displayed with consistent sizing (e.g., max-width with aspect-ratio preservation) and styled with subtle shadows or borders that complement the coffee and cardboard theme. Add hover effects for visual interest."
+        }
+      ]
+    }
+  ]
+}

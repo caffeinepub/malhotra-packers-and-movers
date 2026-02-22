@@ -1,0 +1,60 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-prominent-all-india-services-messaging-to-the-homepage-to-communicate-nationwide-service-availability-integrated-naturally-with-existing-content-sections",
+      "featureTitle": "Add prominent 'All India Services' messaging to the homepage to communicate nationwide service availability, integrated naturally with existing content sections",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-new-specialty-items-we-handle-section-on-the-homepage-that-showcases-the-company-s-capability-to-pack-and-move-delicate-items-such-as-photo-frames-trophies-and-antique-items",
+      "featureTitle": "Create a new 'Specialty Items We Handle' section on the homepage that showcases the company's capability to pack and move delicate items such as photo frames, trophies, and antique items",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SpecialtyItems.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-all-newly-generated-specialty-item-images-as-static-assets-in-the-frontend-public-assets-generated-directory-for-use-in-the-specialty-items-section",
+      "featureTitle": "Render all newly generated specialty item images as static assets in the frontend/public/assets/generated directory for use in the Specialty Items section",
+      "files": [
+        "frontend/src/components/SpecialtyItems.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

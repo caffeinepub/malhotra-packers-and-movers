@@ -1,2 +1,3 @@
-# malhotra-packers-and-movers
-Exported from Caffeine project: Malhotra Packers and Movers
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

@@ -1,0 +1,65 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-22T09:33:11.228Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 3,
+    "implemented": 3,
+    "items": [
+      {
+        "id": "REQ-14",
+        "summary": "Add prominent 'All India Services' messaging to the homepage to communicate nationwide service availability, integrated naturally with existing content sections",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Create a new 'Specialty Items We Handle' section on the homepage that showcases the company's capability to pack and move delicate items such as photo frames, trophies, and antique items",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/SpecialtyItems.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/SpecialtyItems.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-16",
+        "summary": "Render all newly generated specialty item images as static assets in the frontend/public/assets/generated directory for use in the Specialty Items section",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/SpecialtyItems.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/SpecialtyItems.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/antique-item-pink.dim_400x400.png",
+    "frontend/public/assets/generated/photo-frame-pink.dim_400x400.png",
+    "frontend/public/assets/generated/trophy-pink.dim_400x400.png",
+    "frontend/src/App.tsx",
+    "frontend/src/components/SpecialtyItems.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

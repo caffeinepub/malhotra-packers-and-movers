@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Coffee and Cardboard Color Scheme - Light Mode */
+        --background: 0.98 0.01 40;
+        --foreground: 0.22 0.04 40;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.22 0.04 40;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.22 0.04 40;
+        
+        /* Coffee dark brown as primary */
+        --primary: 0.32 0.06 40;
+        --primary-foreground: 0.98 0.01 40;
+        
+        /* Cardboard light as secondary */
+        --secondary: 0.88 0.02 45;
+        --secondary-foreground: 0.22 0.04 40;
+        
+        --muted: 0.92 0.015 45;
+        --muted-foreground: 0.48 0.04 40;
+        
+        /* Warm accent color - enhanced for better visibility */
+        --accent: 0.72 0.14 50;
+        --accent-foreground: 0.18 0.04 40;
+        
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        
+        --border: 0.85 0.02 45;
+        --input: 0.85 0.02 45;
+        --ring: 0.58 0.05 40;
+        
+        /* Coffee tones - enhanced contrast */
+        --coffee-darkest: 0.18 0.05 40;
+        --coffee-dark: 0.32 0.06 40;
+        --coffee-medium: 0.52 0.07 45;
+        --coffee-light: 0.75 0.03 45;
+        
+        /* Cardboard tones */
+        --cardboard-dark: 0.62 0.05 50;
+        --cardboard-medium: 0.76 0.04 48;
+        --cardboard-light: 0.88 0.02 45;
+        --cardboard-lightest: 0.96 0.01 42;
+    }
+
+    .dark {
+        --background: 0.18 0.04 40;
+        --foreground: 0.95 0.01 40;
+        
+        --card: 0.22 0.04 40;
+        --card-foreground: 0.95 0.01 40;
+        
+        --popover: 0.22 0.04 40;
+        --popover-foreground: 0.95 0.01 40;
+        
+        --primary: 0.85 0.02 45;
+        --primary-foreground: 0.22 0.04 40;
+        
+        --secondary: 0.32 0.05 40;
+        --secondary-foreground: 0.95 0.01 40;
+        
+        --muted: 0.32 0.05 40;
+        --muted-foreground: 0.68 0.03 42;
+        
+        --accent: 0.62 0.12 48;
+        --accent-foreground: 0.98 0.01 40;
+        
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.95 0.01 40;
+        
+        --border: 0.32 0.04 40;
+        --input: 0.32 0.04 40;
+        --ring: 0.68 0.04 42;
+        
+        /* Coffee tones - dark mode */
+        --coffee-darkest: 0.12 0.05 40;
+        --coffee-dark: 0.28 0.06 40;
+        --coffee-medium: 0.48 0.07 45;
+        --coffee-light: 0.68 0.04 45;
+        
+        /* Cardboard tones - dark mode */
+        --cardboard-dark: 0.52 0.05 50;
+        --cardboard-medium: 0.66 0.04 48;
+        --cardboard-light: 0.76 0.03 45;
+        --cardboard-lightest: 0.90 0.01 42;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        font-feature-settings: 'cv11', 'ss01';
+        font-optical-sizing: auto;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        line-height: 1.2;
+    }
+
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: oklch(var(--cardboard-light));
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: oklch(var(--coffee-medium));
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: oklch(var(--coffee-dark));
+    }
+}

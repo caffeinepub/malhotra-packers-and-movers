@@ -1,0 +1,17 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods or state, serving as a placeholder backend for the static frontend application.",
+  "feature_evidence.json": "Feature evidence report documenting three implemented features: All India Services messaging, Specialty Items section, and static asset rendering for specialty item images.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of frontend files describing the enhanced App component with All India Services badge, SpecialtyItems component, custom hooks, and Tailwind configuration.",
+  "frontend/index.css": "Tailwind CSS configuration with custom OKLCH color variables for light and dark themes, defining coffee and cardboard color palette for the moving company website.",
+  "frontend/index.html": "Basic HTML entry point for the React application with viewport meta tag and module script loading main.tsx.",
+  "frontend/src/App.tsx": "Main React application component featuring header with logo, hero section with All India Services badge, services grid, SpecialtyItems component, contact information, and footer with social links.",
+  "frontend/src/components/SpecialtyItems.tsx": "React component displaying a three-column grid showcasing specialty moving services for photo frames, trophies, and antiques with hover effects and scroll animations.",
+  "frontend/src/hooks/useActor.ts": "Custom React hook managing ICP backend actor creation with Internet Identity authentication, query caching, and automatic invalidation on identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context provider and hook for Internet Identity authentication, managing login state, identity persistence, and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/useQueries.ts": "Intentionally empty file with export statement, indicating no backend queries are needed for this static content website.",
+  "frontend/src/hooks/useScrollAnimation.ts": "Custom React hook using IntersectionObserver to detect element visibility in viewport and trigger scroll-based animations with configurable threshold.",
+  "frontend/src/index.css": "Defines Tailwind CSS configuration with a coffee and cardboard color scheme for both light and dark modes, including custom CSS variables for colors, typography settings using Inter font, and custom scrollbar styling.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClient for data fetching and InternetIdentityProvider for authentication, rendering the main App component.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the default theme with custom colors (coffee, cardboard, sidebar), border radius variables, box shadows, animations, and typography settings, plus plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state tracking document for Malhotra Packers and Movers website, listing implemented features including homepage with company info, contact details, 24/7 availability, coffee/cardboard color scheme, and modern layout with animations."
+}

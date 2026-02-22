@@ -1,0 +1,88 @@
+{
+  "kind": "build_request",
+  "title": "Add All India Services messaging and Specialty Items section with pink-accented images",
+  "projectName": "Malhotra Packers and Movers",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "text": "Add prominent 'All India Services' messaging to the homepage to communicate nationwide service availability, integrated naturally with existing content sections",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1",
+          "msg-5",
+          "msg-8"
+        ],
+        "quotes": [
+          "We provide all india services",
+          "Add \"All India Services\" messaging prominently on the site"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All India Services messaging is prominently displayed on the homepage",
+        "The messaging clearly communicates nationwide service availability",
+        "The styling is consistent with the existing coffee and cardboard color scheme",
+        "The messaging integrates naturally with existing sections without disrupting layout"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Create a new 'Specialty Items We Handle' section on the homepage that showcases the company's capability to pack and move delicate items such as photo frames, trophies, and antique items",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6",
+          "msg-8",
+          "msg-10"
+        ],
+        "quotes": [
+          "Add some pink in handle photo frame trophy and antic item",
+          "Create a dedicated \"Specialty Items We Handle\" section"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new section titled 'Specialty Items We Handle' or similar is added to the homepage",
+        "The section displays generated images of photo frames, trophies, and antique items with pink accents",
+        "The section layout is responsive and follows the existing design patterns",
+        "The section communicates the company's expertise in handling delicate and valuable items"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Render all newly generated specialty item images as static assets in the frontend/public/assets/generated directory for use in the Specialty Items section",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6",
+          "msg-8",
+          "msg-10"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All generated specialty item images are placed in frontend/public/assets/generated directory",
+        "Images are properly referenced in the Specialty Items section component",
+        "Images load correctly and display with appropriate sizing and styling"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain the existing coffee and cardboard color scheme throughout new sections",
+    "Ensure new sections follow the existing modern design patterns with proper spacing and animations",
+    "Do not modify immutable frontend paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui"
+  ],
+  "nonGoals": [
+    "Backend functionality or data persistence for specialty items",
+    "Interactive features for specialty items (booking, pricing, quotes)",
+    "Multiple pages or routing beyond the single homepage",
+    "Real-time service availability tracking"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Photo frame with ornate pink-accented handle or border, elegant style suitable for packing service showcase (photo-frame-pink.dim_400x400.png)",
+      "Trophy with pink accents on base or handles, polished metallic finish (trophy-pink.dim_400x400.png)",
+      "Antique decorative item (vase or clock) with pink handle or detailing, vintage aesthetic (antique-item-pink.dim_400x400.png)"
+    ],
+    "edits": []
+  }
+}
